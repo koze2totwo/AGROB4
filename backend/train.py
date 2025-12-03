@@ -30,14 +30,14 @@ class Config:
     pin_memory = True
     
     # Training
-    batch_size = 32  # Reduced for RTX 3050 (4GB/6GB VRAM) with larger model
-    num_epochs = 10
+    batch_size = 30  
+    num_epochs = 8
     learning_rate = 1e-3
     weight_decay = 1e-4
     label_smoothing = 0.1
     
     # Model
-    model_name = 'efficientnet_b4' # Good balance of speed/accuracy for RTX 3050
+    model_name = 'efficientnet_b4' 
     dropout = 0.4
     
     # Paths
